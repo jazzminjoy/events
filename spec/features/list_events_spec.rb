@@ -2,11 +2,7 @@ require "spec_helper"
 
 describe "Viewing the list of events" do |variable|
 	it "shows the event" do
-		event1 = Event.create(name: "BugSmash",
-			location: "Denver",
-			price: 10.00,
-			description: "A fun evening of bug smashing",
-			starts_at: 10.days.from_now)
+		event1 = Event.create(event_attributes)
 
 		event2 = Event.create(name: "Hackathon",
 			location: "Austin",
